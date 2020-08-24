@@ -1,0 +1,130 @@
+.big-card{
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  background: #f8f8f8;
+  min-height: 100vh;
+  padding-top: 40px;
+}
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* margin: 20px; */
+}
+.container .card{
+    position: relative;
+    height: 250px;
+    width: 45%;
+    background: #cde397c5;
+    display: flex;
+    margin: 30px 0;
+}
+.container .card .imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #222831;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    padding-bottom: 70px;
+}
+.container .card img{
+    animation: aaa 3s linear infinite;
+}
+.container .card:hover img{
+    animation: none;
+}
+@keyframes aaa{
+    0%{
+        transform: translate(5px);
+    }
+    50%{
+        transform: translate(-5px);
+    }
+    100%{
+        transform: translate(5px);
+    }
+}
+.container .card:hover .imgBx
+{
+    width: 150px;
+    height: 150px;
+    left: -75px;
+    top: calc(50% - 75px);
+    transition: 0.5s ease-in-out;
+    background-color: #ff0057;
+    padding-bottom: 0;
+}
+.container .card .imgBx:before{
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 5em;
+    color: #f3c623;
+    font-weight: 700;
+    font-family: 'Fondamento', cursive;
+    transition: 0.5s ease-in-out;
+}
+.container .card:hover .imgBx:before{
+    opacity: 0;
+}
+.container .card .imgBx img{
+    transition: o.5s ease-in-out;
+}
+.container .card:hover .imgBx img{
+    max-width: 75px;
+}
+.container .card .content{
+    position: absolute;
+    right: 0;
+    width: calc(100% - 75px);
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.container .card .content h3{
+    margin-bottom: 5px;
+    font-size: 45px;
+    font-family: "Dancing Script", cursive;
+    color: #12cad6;
+}
+@media(max-width:992px)
+{
+    .container{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container .card{
+        width: 400px;
+    }
+}
+@media(min-width:1200px) and (max-width:1300px){
+    .container .card{
+        width: 40%;
+        margin-left: 50px;
+    }
+}
+@media(min-width:320px) and (max-width:375px){
+    .container .card{
+        width: 90%;
+    }
+    .container{
+        width: 100%;
+    }
+}

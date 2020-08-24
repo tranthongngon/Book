@@ -1,0 +1,98 @@
+/** @format */
+.login-register{
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.384);
+}
+.witdh {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  background-image: url(https://blog.hamtruyentranh.com/wp-content/uploads/2019/01/your-name.png);
+  background-size: cover;
+  border: 2px so gray;
+  margin-bottom: 50px;
+}
+.witdh .form {
+  width: 100%;
+  background-color:#fff591;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  align-content: center;
+  height: 90%;
+}
+.form .title{
+    font-size: 50px;
+    margin-bottom: -10px;
+    font-family: "Oswald", sans-serif;
+}
+.input {
+  width: 85%;
+  height: 35px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  padding: 4px 5px;
+  background: #fff;
+  border: 1px solid #d0d0d0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding-left: 15px;
+}
+.form p{
+    font-family:'Playfair Display', serif;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    font-size: 25px;
+    color:#1b262c;
+    float: left;
+    margin-left: 50px;
+}
+.loginBtn{
+    width: 100px;
+    height: 35px;
+    box-sizing: border-box;
+    padding: 4px 10px;
+    background: #f5f4ea;
+    border: 1px solid #d0d0d0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+    float: left;
+    margin-bottom: 50px;
+    margin-left: 40px;
+    margin-top: 20px;
+  }
+  .loginBtn:hover{
+    background: #c3c3ba;
+  }
+  .registerBtn{
+    float: right;
+    background: #3d8577;
+    color: #fff;
+    height: 35px;
+    box-sizing: border-box;
+    padding: 4px 10px;
+    border: 1px solid #d0d0d0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100px;
+    margin-right: 40px;
+    margin-top: 20px;
+  }
+  .registerBtn:hover{
+    background: #2d6358;
+  }
+  .Error{
+    padding: 10px;
+    background-color: #feeaea;
+    border: 1px solid #fadadb;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }

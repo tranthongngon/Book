@@ -1,0 +1,162 @@
+/** @format */
+
+.contact {
+  background-image: url(https://www.incimages.com/uploaded_files/image/1024x576/getty_883231284_200013331818843182490_335833.jpg);
+  background-size: cover;
+  text-align: center;
+  height: 550px;
+  width: 100%;
+}
+.contact-banner {
+  position: relative;
+  margin: auto;
+}
+.contact-banner h2 {
+  margin-top: 60px;
+  margin-left: 80px;
+  font-size: 150px;
+  font-family: "Roboto Slab", serif;
+  position: absolute;
+}
+.contact-banner h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #065446;
+}
+.contact h2:nth-child(2) {
+  color: #065446;
+  animation: animate 4s ease-in-out infinite;
+}
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0 59%,
+      16% 63%,
+      33% 65%,
+      50% 62%,
+      66% 51%,
+      83% 45%,
+      100% 44%,
+      100% 100%,
+      0 100%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      0 45%,
+      14% 43%,
+      29% 45%,
+      48% 59%,
+      65% 65%,
+      81% 63%,
+      100% 60%,
+      100% 100%,
+      0 100%
+    );
+  }
+}
+@media(min-width:768px) and (max-width:992px){
+  .contact-banner h2 {
+    margin-top: 60px;
+    margin-left: 60px;
+    font-size: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .contact {
+    height: 500px;
+    width: 100%;
+  }
+  .contact-banner h2 {
+    margin-top: 60px;
+    margin-left: 60px;
+    font-size: 80px;
+  }
+}
+@media (max-width: 425px) {
+  .contact {
+    height: 250px;
+    width: 100%;
+  }
+  .contact-banner h2 {
+    margin-top: 20px;
+    margin-left: 35px;
+    font-size: 45px;
+  }
+  .map {
+    margin-bottom: 40px;
+  }
+}
+
+/* css message-map */
+
+.map {
+  text-align: center;
+  width: 100%;
+  height: 500px;
+}
+.form {
+  text-align: center;
+  width: 100%;
+  height: 500px;
+  background-color: #dee3e2;
+  border: 2px solid gray;
+  justify-content: center;
+}
+.message-map {
+  padding-top: 80px;
+  padding-bottom: 70px;
+  background-color: #d3dbff;
+  text-align: center;
+  border-top: 1.5px solid gray;
+}
+
+.google-map {
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.big-form {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.form h3 {
+  padding-top: 15px;
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+}
+.message-map .form input {
+  width: 75%;
+  height: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 5px;
+  outline-color: #f2a51a;
+  border: 1px solid;
+}
+.message-map .form textarea {
+  width: 75%;
+  height: 130px;
+  border-radius: 5px;
+  outline-color: #f2a51a;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+.message-map .form button {
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: #00bcd4;
+  border: 1px solid gray;
+  margin-top: 15px;
+}
+.message-map .form button:hover {
+  background-color: #f2a51a;
+  border: 1.5px solid black;
+}
+.message-map .form label {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}

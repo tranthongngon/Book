@@ -1,0 +1,32 @@
+.footer {
+    padding-top: 50px;
+    background-color: #222831;
+    border-top: 1.5px solid black;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.footer h2 {
+    font-size: 35px;
+    font-family: initial;
+    color: #ffd31d;
+}
+
+.footer-info span {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.footer-contact p i {
+    margin-right: 20px;
+    color: #dee3e2;
+}
+.footer-social i{
+    margin-right: 25px;
+    color: #dee3e2;
+}
+.footer-social span{
+    font-size: 18px;
+    padding-bottom: 5px;
+    display: block;
+}
